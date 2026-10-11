@@ -54,6 +54,50 @@ The model and preprocessor are loaded from saved files. The API performs inferen
 
 
 
+\## Model Evaluation
+
+
+
+The XGBoost classifier was evaluated on held-out test data using a classification threshold of 0.5.
+
+
+
+| Metric | Score |
+
+|---|---:|
+
+| Accuracy | 75.66% |
+
+| Precision (Churn) | 53.36% |
+
+| Recall (Churn) | 65.78% |
+
+| F1-score (Churn) | 58.92% |
+
+| ROC-AUC | 0.816 |
+
+
+
+\### Key Findings
+
+
+
+\- Precision: Approximately 53% of customers predicted to churn were actual churners.
+
+\- Recall:The model identified approximately 66% of customers who actually churned.
+
+\- F1-score: Balances precision and recall to provide a single measure of classification performance.
+
+\- ROC-AUC: A score of 0.816 indicates good ability to distinguish between churners and non-churners across different classification thresholds.
+
+
+
+These results illustrate the trade-off between identifying more potential churners and avoiding false alarms. The best decision threshold depends on the business objective.
+
+
+
+
+
 \## API Endpoints
 
 
