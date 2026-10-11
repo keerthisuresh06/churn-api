@@ -1,0 +1,17 @@
+
+# Python environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Temporary model test
+xgb_pickle_test.joblib
+
+# Environment variables and secrets
+.env
+
+models/churn_pipeline.joblib
+models/*.ipynb
